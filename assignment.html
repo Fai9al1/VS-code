@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVA UNIVERSITY</title>
+</head>
+<body>
+ <h1>result for REVA students</h1>   
+ <img src="reva logo.png" alt="">
+ <br> <br>
+ <label for="">name</label>
+ <input type="text" name="" id="name" placeholder="Enter your name">
+ <br> <br>
+<label for="">sem</label>
+<input type="number" name="" id="age">
+<br> <br>
+<label for="">SRN</label>
+<input type="text" name="" id="" placeholder="SRN">
+<br> <br>
+
+<button onclick="vote()">SUBMIT</button>
+
+<p id="result">all the best for your results</p>
+<script src="assignment.js"></script>
+<style>
+    body{
+        background-color: orange;
+        text-align: center;
+        padding: 5px;
+        margin: auto;
+        background-image: url(REVA_UNIVERSITY.jpg);
+    }
+    p{
+        color: orange;
+        background-color: black;
+        
+    }
+    label{
+        color: orange;
+    }
+    button{
+        background-color: orange;
+    }
+</style>
+<script>
+    function vote() {
+        var name = document.getElementById("name").value;
+        var SRN = document.getElementById("SRN");
+        var marks = Math.floor(100 * Math.random());
+        var result = document.getElementById("result");
+
+        var resultMessage;
+    }
+    if (marks>= 0 && marks <= 35){
+        resultMessage = name + ""
+    }
+</script> 
+</body>
+</html>
